@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: "Dosis", sans-serif;
+}
+
+/* header code */
+header {
+    padding: 1rem 10px;
+    background-color: #c3effe;
+}
+header span {
+    color: #b2012a;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/* navigation code */
+nav {
+    background-color: #002edb;
+}
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #c3effe;
+    font-weight: 700;
+}
+
+nav li.active a{
+    background-color: #002092;
+    color: #c3effe;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+/* main code */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #002EDB;
+    background-color: #c3effe;
+    width: 25rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+main h2 {
+    color: #002092;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #b2012a;
+}
+main ul {
+    color: #b2012a;
+}
+main ol {
+    color: #b2012a;
+}
+
+main a {
+    color: #002EDB;
+}
+main a:visited {
+    color: #002092;
+}
+main a:hover {
+    color: #b2012a;
+}
+
+.vocabulary-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.vocabulary-lists > div {
+    flex: 1 1 200px;
+}
+
+figure.wrapped {
+    margin: 0 100px 50px 50px;
+    width: 25%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    margin-bottom: 2rem;
+}
+div.gallery figure {
+    margin: 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #002092
+}
+
+/* footer code */
+footer {
+    background-color: #b2012a;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: white;
+    letter-spacing: 3px;
+    clear: both;
+}
+footer p {
+    margin: 0;
+}
