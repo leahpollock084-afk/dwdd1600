@@ -1,0 +1,256 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: "Dosis", sans-serif;
+}
+
+/* header code */
+header {
+    padding: 1rem 15px 15px 15px;
+    background-color: #c3effe;
+    display: flex;
+    align-items: center;
+}
+header span {
+    color: #b2012a;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: white;
+        text-decoration: none;
+        border-bottom: solid 1px;
+        font-weight: 700;
+    }
+    nav .active a {
+        background-color: #002092;
+        color: white;
+        background-image: linear-gradient(to top, #002092, #002edb);
+    }
+
+} /* end small screens */
+
+
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 801px) {
+
+nav {
+    border-top: solid 1px white;
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 1.2rem 1rem .3rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #002EDB;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: solid 2px;
+}
+
+nav .active a {
+    border-bottom: solid 2px #b2012a;
+}
+nav a:hover {
+    color: black;
+}
+
+} /* END LARGE SCREENS */
+
+/* navigation code */
+nav {
+    background-color: #002edb;
+}
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #c3effe;
+    font-weight: 700;
+}
+
+nav li.active a{
+    background-color: #002092;
+    color: #c3effe;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+/* main code */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #002EDB;
+    background-color: #c3effe;
+    width: 25rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+main h2 {
+    color: #002092;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #b2012a;
+}
+main ul {
+    color: #b2012a;
+}
+main ol {
+    color: #b2012a;
+}
+
+main a {
+    color: #002EDB;
+}
+main a:visited {
+    color: #002092;
+}
+main a:hover {
+    color: #b2012a;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.vocabulary-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.vocabulary-lists > div {
+    flex: 1 1 200px;
+}
+
+figure.wrapped {
+    margin: 0 100px 50px 50px;
+    width: 25%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    margin-bottom: 2rem;
+}
+div.gallery figure {
+    margin: 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #002092
+}
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #b2012a;
+}
+
+.myForm fieldset {
+    border: 1px solid #002EDB;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #b2012a;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #c3effe;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Dosis", sans-serif;
+}
+
+.myForm textarea {
+    height: 10rem;
+    width: 50rem;
+}
+
+.myForm :required {
+    background-color: #b2012a15;
+}
+
+.myForm [type=submit] {
+    background-color: #002092;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-family: "Dosis", sans-serif;
+}
+
+/* footer code */
+footer {
+    background-color: #b2012a;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: white;
+    letter-spacing: 3px;
+    clear: both;
+}
+footer p {
+    margin: 0;
+}
+
+header, nav, main, footer {
+    max-width: 65rem;
+    margin: 0 auto;
+}
