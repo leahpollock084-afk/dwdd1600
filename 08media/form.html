@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spanish.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dosis:wght@200..800&family=Oxygen:wght@300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo for Aprendamos Juntos" width="35">
+        <span>APRENDAMOS JUNTOS</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Why Learn Spanish?</a></li>
+            <li><a href="alphabet.html">Alphabet & Pronunciation</a></li>
+             <li><a href="vocabulary.html">Vocabulary</a></li>
+             <li><a href="grammar.html">Grammar</a></li>
+             <li><a href="phrases.html">Helpful Phrases</a></li>
+             <li><a href="gallery.html">Travel</a></li>
+             <li class="active"><a href="form.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Contact Us</h1>
+
+        <h3>Phone Number:</h3>
+        <p>385-552-8120</p>
+        <h3>Email:</h3>
+        <p>10976691@uvu.edu</p>
+        <h3>Address:</h3>
+        <p>Storage, Unnamed Road, Aguas Calientes 08680, Peru</p>
+
+        <br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.987412351947!2d-72.54783702667656!3d-13.163193563687773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d9a5f89555555%3A0x3a10370ea4a01a27!2sHistoric%20Sanctuary%20of%20Machu%20Picchu!5e0!3m2!1sen!2sus!4v1791928120933!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      
+        <form method="get" class="myForm" action="thanks.html">
+
+            <br>
+
+        <fieldset>
+        <legend>User Contact Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="555-555-5555"></label>
+        <label>Email*<input type="email" name="email" required placeholder="example@website.com"></label>
+        </fieldset>
+
+        <h2>The information below will help us improve our website and course material.</h2>
+
+        <fieldset>
+        <legend>Age</legend>
+            <label><input type="radio" name="method" value="teen">Teenager (12-17)</label>
+            <label><input type="radio" name="method" value="youngadult">Young Adult (18-30)</label>
+            <label><input type="radio" name="method" value="adult">Adult (30+)</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Why are you learning Spanish?</legend>
+            <label><input type="checkbox" name="school" value="chosen"> For school</label>
+            <label><input type="checkbox" name="work" value="chosen"> For work</label>
+            <label><input type="checkbox" name="travel" value="chosen"> For travel</label>
+            <label><input type="checkbox" name="fun" value="chosen"> For fun</label>
+            <label><input type="checkbox" name="other" value="chosen"> Other</label>
+
+            <label>What is your current level of fluency?
+            <select name="fluency">
+            <option value="none">Please Select</option>
+            <option value="beginner">Beginner (I only know the basics)</option>
+            <option value="intermediate">Intermediate (I have some experience)</option>
+            <option value="advanced">Advanced (I can carry full conversations with ease)</option>
+            <option value="fluent">Fluent (Spanish is my native language)</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <label>Please leave any feedback here. We will do our best to respond within 3 business days.
+            <textarea name="comments" placeholder="Questions, comments, concerns"></textarea>
+        </label>
+
+        <input type="submit" value="SEND RESPONSE">
+        </form>
+        
+    </main>
+     <footer>
+        &copy; 2026 Leah Pollock &bull; Web Essentials
+    </footer>
+</body>
+
+</html>
